@@ -1,0 +1,45 @@
+[ INFO ] [2019-07-25 19:15:17] com.warm.DynamicDatasourceApplication [48] - Starting DynamicDatasourceApplication on GuoQdeMacBook-Pro.local with PID 50749 (/Users/guoqiang/StudySpase/IdeaProjects/dynamic-dataSource-demo-master/target/classes started by guoqiang in /Users/guoqiang/StudySpase/IdeaProjects/dynamic-dataSource-demo-master)
+[ DEBUG] [2019-07-25 19:15:17] com.warm.DynamicDatasourceApplication [51] - Running with Spring Boot v1.5.10.RELEASE, Spring v4.3.14.RELEASE
+[ INFO ] [2019-07-25 19:15:17] com.warm.DynamicDatasourceApplication [597] - The following profiles are active: dev
+[ INFO ] [2019-07-25 19:15:17] org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext [583] - Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@815b41f: startup date [Thu Jul 25 19:15:17 CST 2019]; root of context hierarchy
+[ INFO ] [2019-07-25 19:15:18] org.springframework.boot.context.embedded.tomcat.TomcatEmbeddedServletContainer [89] - Tomcat initialized with port(s): 8080 (http)
+[ INFO ] [2019-07-25 19:15:18] org.springframework.web.context.ContextLoader [276] - Root WebApplicationContext: initialization completed in 869 ms
+[ INFO ] [2019-07-25 19:15:18] org.springframework.boot.web.servlet.ServletRegistrationBean [190] - Mapping servlet: 'dispatcherServlet' to [/]
+[ INFO ] [2019-07-25 19:15:18] org.springframework.boot.web.servlet.ServletRegistrationBean [190] - Mapping servlet: 'statViewServlet' to [/druid/*]
+[ INFO ] [2019-07-25 19:15:18] org.springframework.boot.web.servlet.FilterRegistrationBean [258] - Mapping filter: 'characterEncodingFilter' to: [/*]
+[ INFO ] [2019-07-25 19:15:18] org.springframework.boot.web.servlet.FilterRegistrationBean [258] - Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+[ INFO ] [2019-07-25 19:15:18] org.springframework.boot.web.servlet.FilterRegistrationBean [258] - Mapping filter: 'httpPutFormContentFilter' to: [/*]
+[ INFO ] [2019-07-25 19:15:18] org.springframework.boot.web.servlet.FilterRegistrationBean [258] - Mapping filter: 'requestContextFilter' to: [/*]
+[ INFO ] [2019-07-25 19:15:18] org.springframework.boot.web.servlet.FilterRegistrationBean [271] - Mapping filter: 'webStatFilter' to urls: [/*]
+[ INFO ] [2019-07-25 19:15:20] org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter [534] - Looking for @ControllerAdvice: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@815b41f: startup date [Thu Jul 25 19:15:17 CST 2019]; root of context hierarchy
+[ INFO ] [2019-07-25 19:15:20] org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping [543] - Mapped "{[/price],methods=[GET]}" onto public org.springframework.http.ResponseEntity<java.math.BigDecimal> com.warm.system.controller.IndexController.getPrice()
+[ INFO ] [2019-07-25 19:15:20] org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping [543] - Mapped "{[/user],methods=[GET]}" onto public org.springframework.http.ResponseEntity<java.util.List<com.warm.system.entity.User>> com.warm.system.controller.IndexController.getUserList()
+[ INFO ] [2019-07-25 19:15:20] org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping [543] - Mapped "{[/order],methods=[GET]}" onto public org.springframework.http.ResponseEntity<java.util.List<com.warm.system.entity.Order>> com.warm.system.controller.IndexController.getOrderList()
+[ INFO ] [2019-07-25 19:15:20] org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping [543] - Mapped "{[/price2],methods=[GET]}" onto public org.springframework.http.ResponseEntity<java.math.BigDecimal> com.warm.system.controller.IndexController.getPrice2()
+[ INFO ] [2019-07-25 19:15:20] org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping [543] - Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+[ INFO ] [2019-07-25 19:15:20] org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping [543] - Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+[ INFO ] [2019-07-25 19:15:20] org.springframework.web.servlet.handler.SimpleUrlHandlerMapping [362] - Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+[ INFO ] [2019-07-25 19:15:20] org.springframework.web.servlet.handler.SimpleUrlHandlerMapping [362] - Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+[ INFO ] [2019-07-25 19:15:20] org.springframework.web.servlet.handler.SimpleUrlHandlerMapping [362] - Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+[ INFO ] [2019-07-25 19:15:20] org.springframework.boot.context.embedded.tomcat.TomcatEmbeddedServletContainer [201] - Tomcat started on port(s): 8080 (http)
+[ INFO ] [2019-07-25 19:15:20] com.warm.DynamicDatasourceApplication [57] - Started DynamicDatasourceApplication in 3.126 seconds (JVM running for 4.012)
+[ INFO ] [2019-07-25 19:23:03] org.springframework.web.servlet.DispatcherServlet [489] - FrameworkServlet 'dispatcherServlet': initialization started
+[ INFO ] [2019-07-25 19:23:03] org.springframework.web.servlet.DispatcherServlet [508] - FrameworkServlet 'dispatcherServlet': initialization completed in 17 ms
+[ INFO ] [2019-07-25 19:23:03] com.warm.common.DataSourceSwitchAspect [35] - 切换到db1 数据源...
+[ DEBUG] [2019-07-25 19:23:03] com.warm.system.mapper.UserMapper.selectList [159] - ==>  Preparing: SELECT id AS id,`name`,age,create_time AS createTime,modify_time AS modifyTime FROM user 
+[ DEBUG] [2019-07-25 19:23:03] com.warm.system.mapper.UserMapper.selectList [159] - ==> Parameters: 
+[ DEBUG] [2019-07-25 19:23:03] com.warm.system.mapper.UserMapper.selectList [159] - <==      Total: 1
+[ INFO ] [2019-07-25 19:23:25] com.warm.common.DataSourceSwitchAspect [41] - 切换到db2 数据源...
+[ DEBUG] [2019-07-25 19:23:26] com.warm.system.mapper.OrderMapper.selectList [159] - ==>  Preparing: SELECT id AS id,order_no AS orderNo,user_id AS userId,price,paid_time AS paidTime,create_time AS createTime,modify_time AS modifyTime FROM t_order 
+[ DEBUG] [2019-07-25 19:23:26] com.warm.system.mapper.OrderMapper.selectList [159] - ==> Parameters: 
+[ DEBUG] [2019-07-25 19:23:26] com.warm.system.mapper.OrderMapper.selectList [159] - <==      Total: 1
+[ INFO ] [2019-07-25 19:23:35] com.warm.common.DataSourceSwitchAspect [41] - 切换到db2 数据源...
+[ DEBUG] [2019-07-25 19:23:35] com.warm.system.mapper.OrderMapper.getPriceByUserId [159] - ==>  Preparing: SELECT price from t_order where user_id =? 
+[ DEBUG] [2019-07-25 19:23:35] com.warm.system.mapper.OrderMapper.getPriceByUserId [159] - ==> Parameters: 1(Integer)
+[ DEBUG] [2019-07-25 19:23:35] com.warm.system.mapper.OrderMapper.getPriceByUserId [159] - <==      Total: 1
+[ INFO ] [2019-07-25 19:23:37] com.warm.common.DataSourceSwitchAspect [35] - 切换到db1 数据源...
+[ INFO ] [2019-07-25 19:23:37] com.warm.common.DataSourceSwitchAspect [56] - 根据注解来切换数据源,注解值为:db2
+[ DEBUG] [2019-07-25 19:23:37] com.warm.system.mapper.OrderMapper.getPriceByUserId [159] - ==>  Preparing: SELECT price from t_order where user_id =? 
+[ DEBUG] [2019-07-25 19:23:37] com.warm.system.mapper.OrderMapper.getPriceByUserId [159] - ==> Parameters: 1(Integer)
+[ DEBUG] [2019-07-25 19:23:37] com.warm.system.mapper.OrderMapper.getPriceByUserId [159] - <==      Total: 1
+[ INFO ] [2019-07-25 19:25:43] org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext [984] - Closing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@815b41f: startup date [Thu Jul 25 19:15:17 CST 2019]; root of context hierarchy
